@@ -1,0 +1,33 @@
+$Primary-text-color: #111518;
+$Secondary-text-color: #B9B9B9;
+$Accent: #FF6B09;
+$White-color: #FFFFFF;
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.08em;
+	font-weight: 700;
+	color: $Primary-text-color;
+	margin-left: auto;
+	margin-right: auto;
+}
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+h1,
+h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+.list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.link{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}

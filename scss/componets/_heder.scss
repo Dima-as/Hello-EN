@@ -1,0 +1,60 @@
+.header {
+	padding-top: 30px;
+}
+
+.header-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav {
+	@media screen and(max-width:1199px) {
+		display: none;
+	}
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+
+}
+.nav-item{
+	&:not(:last-child){
+		margin-right: 40px;
+	}
+}
+
+.nav-link {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	color: $Secondary-text-color;
+	
+	&:hover,
+	:focus{
+		color: $Accent;
+		
+	}
+}
+
+.btn-auth {
+	@media screen and(max-width:767px){
+		display: none;
+	}
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: $Accent;
+
+	padding: 26px 24px;
+	border: 1px solid $Accent;
+	background: none;
+}
