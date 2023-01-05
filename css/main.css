@@ -121,11 +121,33 @@ h2, h3, h4, h5, h6, p {
   }
 }
 
+.hero {
+  padding-top: 30px;
+  padding-bottom: 47px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 70px;
+    padding-bottom: 64px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.04)), to(rgba(0, 0, 0, 0.04)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04));
+    -webkit-box-shadow: -5px 21px 26px;
+            box-shadow: -5px 21px 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+}
+
 .hero-titel {
   font-size: 20px;
   line-height: 1.36;
   font-weight: 800;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .hero-titel {
@@ -137,7 +159,39 @@ h2, h3, h4, h5, h6, p {
   .hero-titel {
     font-size: 58px;
     line-height: 1.3;
+    margin-bottom: 24px;
   }
+}
+
+.hero-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    margin-bottom: 40px;
+  }
+}
+
+.hero-subtext {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #B9B9B9;
+}
+
+.hero-label {
+  color: #FF6B09;
 }
 
 .logo {
@@ -172,4 +226,30 @@ h2, h3, h4, h5, h6, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 14px 10px;
+  color: #FFFFFF;
+  background-color: #FF6B09;
+  border: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 26px 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-wrap {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
