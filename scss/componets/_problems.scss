@@ -48,13 +48,13 @@
 .problems-list {
 	display: flex;
 	flex-wrap: wrap;
+	box-shadow: -5px 8px 26px rgb(0 0 0 / 4%);
 
 	@media screen and(max-width:767px) {
 		flex-direction: column;
 		align-items: center;
 		padding-top: 20px;
 		padding-bottom: 20px;
-		box-shadow: -5px 8px 26px rgb(0 0 0 / 4%);
 	}
 
 	@media screen and(min-width:768px) {
