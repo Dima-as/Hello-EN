@@ -1,49 +1,86 @@
-.problems{
+.problems {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: $Primary-text-color;
+	background-image: linear-gradient(180deg,#111518 75.8%,#fff 0);
 }
-.problems-titel{
+
+.problems-titel {
 	font-weight: 800;
 	font-size: 20px;
 	line-height: 1.3;
 	letter-spacing: 0.03em;
 	color: $White-color;
 	margin-bottom: 27px;
+
+	@media screen and(min-width:768px){
+			width: 400px;
+	}
 }
-.problems-titel__label{
+
+.problems-titel__label {
 	color: $Accent;
 }
-.problems-list{
+
+.problems-list {
 	display: flex;
-	@media screen and(max-width:767px){
+	flex-wrap: wrap;
+
+	@media screen and(max-width:767px) {
 		flex-direction: column;
 		align-items: center;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		box-shadow: -5px 8px 26px rgb(0 0 0 / 4%);
+	}
+    
+	@media screen and(min-width:768px){
+		padding-top: 30px;
+		padding-bottom: 26px;
+		padding-left: 96px;
+		align-items: center;
 	}
 
 }
-.problems-item{
-   @media screen and(max-width:767px){
-		&:not(:last-child){
+
+.problems-item {
+	@media screen and(max-width:767px) {
+		&:not(:last-child) {
 			margin-bottom: 10px;
 		}
 	}
+	@media screen and(min-width:768px){
+       
+	}
+
+	
 }
-.problems-item__label{
+
+.problems-item__label {
+	display: flex;
+	align-items: center;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 1.2;
 	color: $Accent;
 	text-align: left;
-	
 	padding-bottom: 5px;
+
+	&::before {
+		display: flex;
+		background-color: $Accent;
+		content: "";
+		width: 15px;
+		height: 2px;
+		margin-right: 10px;
+	}
 }
-.problems-list{
+
+.problems-list {
 	background-color: $White-color;
 }
-.problems-text{
+
+.problems-text {
 	font-size: 14px;
 	line-height: 1.7;
 	width: 215px;
