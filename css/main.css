@@ -532,6 +532,20 @@ h2, h3, h4, h5, h6, p {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .benefits-item {
   -webkit-box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
@@ -543,13 +557,27 @@ h2, h3, h4, h5, h6, p {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.benefits-item:hover, .benefits-item :focus {
+.benefits-item:hover {
   fill: #FFFFFF;
   color: #FFFFFF;
   background-color: #FF6B09;
 }
-.benefits-item:not(:last-child) {
-  margin-bottom: 15px;
+@media screen and (max-width: 767px) {
+  .benefits-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits-item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
 }
 
 .benefits-icon {
@@ -561,12 +589,31 @@ h2, h3, h4, h5, h6, p {
 .benefits-titel {
   font-size: 14px;
   line-height: 1.4;
-  margin-bottom: 32px;
+  margin-bottom: 42px;
 }
 
 .benefits-text {
+  position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.6;
   color: #B9B9B9;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.benefits-text::before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: -21px;
+  display: block;
+  background-color: #FF6B09;
+  width: 15px;
+  height: 2px;
+}
+.benefits-item:hover .benefits-text::before {
+  background-color: #FFFFFF;
+}
+.benefits-item:hover .benefits-text {
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
