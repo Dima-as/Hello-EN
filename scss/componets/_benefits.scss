@@ -1,5 +1,10 @@
 .benefits {
 	text-align: center;
+	padding-bottom: 50px;
+
+	@media screen and(min-width:1200px){
+		padding-bottom: 120px;
+	}
 }
 
 .benefits-subtext {
