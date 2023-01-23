@@ -1192,4 +1192,149 @@ h2, h3, h4, h5, h6, p {
 
 .guarantee-text__accent {
   color: #FF6B09;
+}
+
+.authorization {
+  background: #111518;
+  background-image: url(../../img/mob/registration-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .authorization {
+    background-image: url(../../img/tab/registration-tablet@2x.png);
+    padding-bottom: 71px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .authorization {
+    background-image: url(../../img/dek/registration-desktop.png);
+    padding-top: 100px;
+    padding-bottom: 62px;
+  }
+}
+
+.authorization-titel {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 136%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .authorization-titel {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .authorization-titel {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+}
+
+.authorization-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .authorization-text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .authorization-text {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 56px;
+  }
+}
+
+.authorization-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.authorization-form-label {
+  margin-bottom: 20px;
+  width: 280px;
+}
+@media screen and (min-width: 768px) {
+  .authorization-form-label {
+    width: 390px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .authorization-form-label {
+    width: 478px;
+    margin-bottom: 30px;
+  }
+}
+
+.authorization-form-label-last-child {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .authorization-form-label-last-child {
+    margin-bottom: 80px;
+  }
+}
+
+.authorization-form-input {
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #FFFFFF;
+  padding-left: 28px;
+  color: #FFFFFF;
+}
+.authorization-form-input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.authorization-form-input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.authorization-form-input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.authorization-form-input::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.authorization-form-input::placeholder {
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .authorization-form-input {
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .authorization-form-btn {
+    width: 354px;
+  }
 }/*# sourceMappingURL=main.css.map */
