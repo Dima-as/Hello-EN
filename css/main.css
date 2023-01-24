@@ -1337,4 +1337,59 @@ h2, h3, h4, h5, h6, p {
   .authorization-form-btn {
     width: 354px;
   }
+}
+
+.footer {
+  padding-top: 29px;
+  padding-bottom: 21px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(75.8%, #fff), color-stop(0, #111518));
+  background-image: linear-gradient(180deg, #fff 75.8%, #111518 0);
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 30px;
+}
+.footer-phone {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #111518;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer-icon__insta {
+  background-image: url(../../img/insta.svg);
+  width: 40px;
+  height: 40px;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: #B9B9B9;
 }/*# sourceMappingURL=main.css.map */

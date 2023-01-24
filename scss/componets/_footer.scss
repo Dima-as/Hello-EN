@@ -1,0 +1,48 @@
+.footer{
+	padding-top: 29px;
+	padding-bottom: 21px;
+	background-image: linear-gradient(180deg,#fff  75.8%, #111518 0);
+}
+
+.footer-wrap{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 30px;
+
+	@media screen and(min-width:768px){
+		
+	}
+}
+
+.footer-phone{
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: $Primary-text-color;
+	padding-top: 21px;
+	padding-bottom: 21px;
+	display: flex;
+	align-items: center;
+
+}
+
+.footer-icon{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.footer-icon__insta{
+background-image: url(../../img/insta.svg);
+	width: 40px;
+	height: 40px;
+}
+
+.footer-text{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 28px;
+	text-align: center;
+	color: $Secondary-text-color;
+}
