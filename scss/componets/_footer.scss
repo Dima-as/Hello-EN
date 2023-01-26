@@ -1,17 +1,31 @@
 .footer{
 	padding-top: 29px;
-	padding-bottom: 21px;
-	background-image: linear-gradient(180deg,#fff  75.8%, #111518 0);
 }
 
 .footer-wrap{
 	display: flex;
 	align-items: center;
-	flex-direction: column;
 	padding-bottom: 30px;
 
-	@media screen and(min-width:768px){
-		
+	@media screen and(min-width:768px) and(max-width:1199px){
+		justify-content: space-between;
+	}
+
+	@media screen and(max-width:767px){
+		flex-direction: column;
+	}
+}
+
+.footer-box{
+	display: flex;
+	align-items: center;
+
+	@media screen and(max-width:767px){
+		flex-direction: column;
+	}
+	
+	@media screen and(min-width:1200px){
+		margin-left: 290px;
 	}
 }
 
@@ -20,11 +34,24 @@
 	font-size: 14px;
 	line-height: 17px;
 	color: $Primary-text-color;
-	padding-top: 21px;
-	padding-bottom: 21px;
 	display: flex;
 	align-items: center;
 
+	@media screen and(max-width:767px){
+		padding-top: 21px;
+		padding-bottom: 21px;
+	}
+
+	@media screen and(min-width:768px){
+		&::after{
+			content: "";
+			display: flex;
+			width: 2px;
+			height: 35px;
+			background-color: $Secondary-text-color;
+			margin-left: 24px;
+		}
+	}
 }
 
 .footer-icon{
@@ -35,14 +62,30 @@
 
 .footer-icon__insta{
 background-image: url(../../img/insta.svg);
+	display: flex;
 	width: 40px;
 	height: 40px;
+
+	@media screen and(min-width:768px){
+		margin-left: 24px;
+	}
+}
+
+.footer-text__wrap{
+	text-align: center;
+	padding-top: 21px;
+	padding-bottom: 21px;
+	background-color: $Primary-text-color;
+
+	@media screen and(min-width:768px){
+		text-align: left;
+	}
 }
 
 .footer-text{
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 28px;
-	text-align: center;
+	
 	color: $Secondary-text-color;
 }
